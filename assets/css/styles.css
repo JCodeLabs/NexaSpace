@@ -1,5 +1,11 @@
 /* ============ custom properties ============ */
 :root{
+  /* colors */
+  --accent: #556ff6;
+  --black: #242424;
+  --gray: #e0e0e0;
+
+
   --primary--font-family: "Roboto", sans-serif;
 }
 
@@ -20,6 +26,7 @@ html{
 }
 
 body{
+  min-height: 500vh;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -75,4 +82,128 @@ h6{
 
 small{
   font-size: 1.28rem;
+}
+
+/* ============ utilities styles ============ */
+section{
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+/* ============ header styles ============ */
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  border-bottom: .1rem rgba(0, 0, 0, 0) solid;
+  transition: all .5s ease-in-out;
+}
+
+header.sticky{
+  background-color: #fff;
+  border-bottom: .1rem rgba(0, 0, 0, .548) solid;
+  padding: 1.5rem 10rem;
+}
+
+/* logo */
+.brand{
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.brand:hover{
+  color: var(--accent);
+}
+
+/* menu */
+.menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a{
+  color: var(--black);
+  /* font-size: 2.4rem; */
+  font-weight: 500;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover{
+  color: var(--accent);
+}
+
+.menu a::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: .4rem;
+  border-radius: 2.5rem;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu a:hover::before{
+  transform: scaleX(1);
+}
+
+.btn{
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Contact us button */
+.btn-2{
+  align-items: center;
+  background-color: var(--accent);
+  border: none;
+  /* border: .2rem solid #06f; */
+  border-radius: 3.2rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 4.8rem;
+  justify-content: center;
+  line-height: 2.4rem;
+  width: 14rem;
+  padding: 0 1.7rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-2:focus{
+  color: #171e29;
+}
+
+.btn-2:hover,
+.btn-2:active{
+  background-color: #3385ff;
+  border: #3385ff;
+  fill: #06f;
 }

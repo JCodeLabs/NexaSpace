@@ -30,11 +30,29 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <h1>¡Hola Mundo!</h1>
-
-
-
-
+    <header>
+      <a href="index.html" class="brand">NexaSpace</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="property.html">Properties</a>
+        <a href="index.html#FAQ">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button
+        type="button"
+        class="btn-2 btn-visible"
+        onclick="window.location.href='contact.html'"
+      >
+        Contact Us
+      </button>
+      <div class="btn">
+        <i class="fas fa-bars show-menu"></i>
+      </div>
+    </header>
 
     <!-- parallax effect -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
