@@ -1,0 +1,78 @@
+/* ============ custom properties ============ */
+:root{
+  --primary--font-family: "Roboto", sans-serif;
+}
+
+/* ============ Global reset styles ============ */
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--primary--font-family);
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body{
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+h3{
+  font-size: 1.872rem;
+}
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+}
+
+h4{
+  font-size: 1.6rem;
+}
+
+h5{
+  font-size: 1.328rem;
+}
+
+h6{
+  font-size: 1.072rem;
+}
+
+small{
+  font-size: 1.28rem;
+}
