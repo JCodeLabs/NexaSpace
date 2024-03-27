@@ -448,3 +448,134 @@ header.sticky{
   opacity: 1;
   transform: translateX(1rem);
 }
+
+
+/* ============ properties section styles ============ */
+.properties{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+#properties-title{
+  font-size: 4.8rem;
+}
+
+#properties-title b{
+  color: var(--accent);
+}
+
+#properties-description{
+  font-size: 2.4rem;
+  opacity: 0.7;
+  margin-top: .8rem;
+}
+
+.swiper{
+  width: 60rem;
+  height: 30rem;
+}
+
+.swiper-custom-nav{
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-custom-nav-prev,
+.swiper-custom-nav-next{
+  background-color: #fff;
+  border: .1rem solid var(--black);
+  border-radius: 3.2rem;
+  padding: .8rem 3.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-custom-nav-prev:hover,
+.swiper-custom-nav-next:hover{
+  background-color: var(--accent);
+  color: #fff;
+  border: .1rem solid var(--accent);
+}
+
+.swiper{
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 400px){
+  .swiper{
+    padding: 3.4rem;
+    margin: 2rem 5rem;
+  }
+}
+
+.property{
+  position: relative;
+  min-width: 30rem;
+  max-width: 45rem;
+  border-radius: 3.2rem;
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.27);
+  transition: all 0.5s ease-in-out;
+}
+
+.property:hover{
+  box-shadow: 0 .6rem 1rem rgba(0, 0, 0, .602);
+}
+
+.property img{
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  border-radius: 3.2rem;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2.4rem;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 3.2rem;
+  z-index: 5;
+}
+
+.property-stats{
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  gap: 5rem;
+}
+
+.property-name h6{
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.property-name p{
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.btn-property{
+  border: .1rem solid #fff;
+  color: #fff;
+  font-weight: 300;
+}
