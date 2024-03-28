@@ -61,3 +61,21 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-custom-nav-prev',
   },
 });
+
+
+/*=============== accordion ===============*/
+const toggleAccordion = (accordionId) => {
+  const accordionItem = document.getElementById(accordionId);
+  const answer = accordionItem.querySelector('.answer');
+  const arrow = accordionItem.querySelector('.fa-arrow-up');
+
+  if(accordionItem.classList.contains('active')){
+    accordionItem.classList.remove('active');
+    answer.style.maxHeight = "0";
+    arrow.style.transform = "rotate(0deg)"
+  } else {
+    accordionItem.classList.add('active');
+    answer.style.maxHeight = answer.scrollHeight + "px";
+    arrow.style.transform = "rotate(180deg)"
+  }
+};
