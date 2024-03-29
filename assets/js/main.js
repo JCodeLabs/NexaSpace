@@ -51,7 +51,7 @@ const swiper = new Swiper('.swiper', {
     },
     1440: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 40,
     },
   },
 
@@ -79,3 +79,31 @@ const toggleAccordion = (accordionId) => {
     arrow.style.transform = "rotate(180deg)"
   }
 };
+
+
+/*=============== parallax effect ===============*/
+document.addEventListener("DOMContentLoaded", () => {
+  const heroPageImg = document.getElementsByClassName('hero-page-img');
+  const aboutImg = document.getElementsByClassName('about-img');
+  const propertyImg = document.getElementsByClassName('property-img');
+
+  new simpleParallax(heroPageImg, {
+    delay: 0.6,
+    scale: 1.1,
+    orientation: 'right',
+    transition: "cubic-bezier(0, 0, 0, 1)"
+  });
+
+  new simpleParallax(aboutImg, {
+    delay: 0.6,
+    scale: 1.2,
+    transition: "cubic-bezier(0.1, 0, 0, 1)"
+  });
+
+  new simpleParallax(propertyImg, {
+    delay: 0.6,
+    scale: 1.1,
+    orientation: 'left',
+    transition: "cubic-bezier(0, 0, 0, 1)"
+  });
+});
