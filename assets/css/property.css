@@ -1,0 +1,134 @@
+@import url('styles.css');
+
+
+/* ============ property-page section ============ */
+.property-page{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rem;
+}
+
+.property-page-callout{
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(181deg, #060620, rgba(104, 104, 150, 0.604));
+  background-size: 400% 400%;
+  animation: gradientProperty 2s ease infinite;
+  color: #fff;
+  height: 27rem;
+  border-radius: 3.2rem;
+  border: none;
+}
+
+@keyframes gradientProperty{
+  0%{
+    background-position: 0 56%;
+  }
+  50%{
+    background-position: 100% 45%;
+  }
+  100%{
+    background-position: 0 56%;
+  }
+}
+
+.property-page-callout h1{
+  font-size: 4.8rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1.4rem;
+}
+
+.btn-page-property{
+  margin-top: 2.4rem;
+  border-radius: 1.2rem;
+  width: 20rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border: .1rem solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-page-property:hover{
+  color: #fff;
+  background-color: #000;
+  width: 23rem;
+  border: .1rem solid #fff;
+}
+
+.property-page-intro{
+  display: flex;
+  margin: 3rem 10rem;
+  gap: 3rem;
+}
+
+.property-page-stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  color: #fff;
+  padding: 4.8rem 6.4rem;
+  background: linear-gradient(-45deg, var(--accent), #89a4f9, #1e4ae8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 65rem;
+  border-radius: 3.2rem;
+}
+
+.property-page-stat{
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-page-stat h2{
+  font-size: 4.8rem;
+}
+
+.property-page-stat div h4{
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.porperty-page-img{
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.porperty-page-img img{
+  height: auto;
+  object-fit: cover;
+  flex: 1;
+  max-width: 100%;
+  border-radius: 3.2rem;
+}
+
+.property-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #000);
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 10;
+  border-bottom-left-radius: 3.2rem;
+  border-bottom-right-radius: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-page-rooms{
+  display: flex;
+  gap: 3rem;
+  margin: 0 10rem 3rem 10rem;
+}

@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new simpleParallax(aboutImg, {
     delay: 0.6,
     scale: 1.2,
-    transition: "cubic-bezier(0.5, 0, 0, 1)"
+    transition: "cubic-bezier(0.2, 0, 0, 1)"
   });
 
   new simpleParallax(propertyImg, {
