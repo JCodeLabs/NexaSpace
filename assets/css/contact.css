@@ -1,0 +1,59 @@
+@import url('styles.css');
+
+
+/* ============ contact section ============ */
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin: 12rem 10rem 0 10rem;
+}
+
+.contact-headline{
+  align-self: center;
+  text-align: center;
+}
+
+.contact-headline h1{
+  font-size: 3.2rem;
+}
+
+.contact-headline p{
+  opacity: 0.7;
+}
+
+.contact-content{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2.4rem 0;
+}
+
+.contact-content form{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact-content form input,
+.contact-content form textarea{
+  width: 70rem;
+  height: 6rem;
+  border: none;
+  border-bottom: .1rem solid var(--black);
+  font-size: 2.4rem;
+}
+
+.contact-content form input:focus,
+.contact-content form textarea:focus{
+  outline: none;
+}
+
+.contact-content form textarea{
+  height: 16rem;
+}
+
+.contact-content img{
+  height: 100%;
+  width: 60rem;
+}

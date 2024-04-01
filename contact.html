@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaSpace - Inicio</title>
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper effect link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand">NexaSpace</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="property.html">Properties</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button
+        type="button"
+        class="btn-2 btn-visible"
+        onclick="window.location.href='contact.html'"
+      >
+        Contact Us
+      </button>
+      <div class="btn">
+        <i class="fas fa-bars show-menu"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="contact-headline">
+          <h1>
+            Let's Connect: Reach Out to NexaSpace for Your Real estate Journey
+          </h1>
+          <p>
+            Whether you have questions, want to explore listings, or discuss
+            your property needs, we're here to assist you every step of the way.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input
+              type="hidden"
+              name="access_key"
+              value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
+            />
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+            <input
+              type="number"
+              name="contact-numbre"
+              id="contact-numbre"
+              placeholder="Contact No."
+              required
+            />
+            <input type="email" name="email" id="email" placeholder="E-mail" required/>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="What do you have in mind?"
+              required
+            ></textarea>
+            <button type="submit" class="btn-2">Submit</button>
+          </form>
+
+          <img src="assets/img/contact-1.png" alt="Building">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contact-callout">
+        <h4>Connect with NexaSpace for Yuor Next Chapter in Homeownership</h4>
+        <p>
+          Experience excellence in real estate - Your dream home is just a click
+          away. <br />Reach out to us for personalized service and unparalleled
+          living spaces.
+        </p>
+        <button
+          type="button"
+          class="btn-2 btn-callout"
+          onclick="window.location.href='contact.html'"
+        >
+          Contact Us
+        </button>
+      </div>
+      <div class="bottom-footer">
+        <div class="footer-contacts">
+          <a href="/">
+            <h4>NexaSpace</h4>
+          </a>
+          <div>
+            <p>123, Orange Streets</p>
+            <p>California</p>
+            <p>+ 1 509 390 034</p>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-links-container">
+            <div class="footer-links">
+              <h4>Company</h4>
+              <div class="footer-link">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="property.html">Properties</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <h4>Explore</h4>
+              <div class="footer-link">
+                <a href="#">Miami</a>
+                <a href="#">San Francisco</a>
+                <a href="#">New York</a>
+                <a href="#">Chicago</a>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <h4>Support</h4>
+              <div class="footer-link">
+                <a href="index.html#faq">FAQ</a>
+                <a href="service-buy.html">Buy Properties</a>
+                <a href="service-buy.html">Sell Properties</a>
+                <a href="service-buy.html">Rent Properties</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="discounts">
+            <h4>Get Discounts and Offers</h4>
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input
+                type="hidden"
+                name="access_key"
+                value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail"
+              />
+              <button type="submit" class="btn-2 btn-submit">Submit</button>
+            </form>
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/?locale=es_LA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/?lang=es"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- parallax effect -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <!-- scroll reveal effect -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- custom script -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
