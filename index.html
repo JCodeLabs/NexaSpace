@@ -30,48 +30,62 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html" class="brand">NexaSpace</a>
-      <div class="menu">
-        <div class="btn">
-          <i class="fas fa-times close-menu"></i>
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="logo">NexaSpace</a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li>
+              <a href="index.html#home" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="property.html" class="nav__link">Properties</a>
+            </li>
+            <li>
+              <a href="index.html#faq" class="nav__link">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <div class="btn">
+              <i class="fas fa-times close-menu"></i>
+            </div>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="btn-2 btn-contact-us"
+          onclick="window.location.href='contact.html'"
+        >
+          Contact Us
+        </button>
+        <div class="btn menu-icon">
+          <i class="fas fa-bars show-menu"></i>
         </div>
-        <a href="index.html#home">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="property.html">Properties</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <button
-        type="button"
-        class="btn-2 btn-visible"
-        onclick="window.location.href='contact.html'"
-      >
-        Contact Us
-      </button>
-      <div class="btn">
-        <i class="fas fa-bars show-menu"></i>
       </div>
     </header>
 
     <main>
-      <section class="hero-page" id="home">
-        <div class="hero-page-headlines">
-          <h6 id="hero-slogan">
-            Discover a World of Comfort, Luxury, and Style in every Residence.
+      <section class="hero__container" id="home">
+        <div class="hero__content">
+          <h6 class="hero__slogan">
+            Discover a World of Comfort, Luxury, and Style in every Residence
           </h6>
-          <h1 id="hero-title">
-            Elevate your Living Experience with Exceptional Homes.
+          <h1 class="hero__title">
+            Elevate your Living Experience with Exceptional Homes
           </h1>
-          <p id="hero-description">
+          <p class="hero__description">
             Explore a curated collection of thoughtfully designed residences,
             where every detail reflects a commitment to unparalleled comfort,
             timeless aesthetics, and a lifestyle tailored just for you.
           </p>
-          <div id="hero-btn">
+          <div class="hero__btn">
             <button
               type="button"
-              class="btn-2 btn-heropage"
+              class="btn-2 btn__view-properties"
               onclick="window.location.href='index.html#properties'"
             >
               View Properties
@@ -113,231 +127,123 @@
       </div>
 
       <section class="about" id="about">
-        <div class="about-imgs">
-          <img
-            src="assets/img/about-1.png"
-            alt="Fraction 1 of 4"
-            class="about-img"
-          />
-          <img
-            src="assets/img/about-2.png"
-            alt="Fraction 2 of 4"
-            class="about-img"
-          />
-          <img
-            src="assets/img/about-3.png"
-            alt="Fraction 3 of 4"
-            class="about-img"
-          />
-          <img
-            src="assets/img/about-4.png"
-            alt="Fraction 4 of 4"
-            class="about-img"
-          />
-        </div>
-        <div class="about-headlines">
-          <h2>Bringing a touch of heart and soul to every home</h2>
-          <p>
-            We take pride in our clients' satisfaction with their finished
-            NexaSpace homes.
-          </p>
-          <!-- current projects -->
-          <div class="about-projects">
-            <div>
-              <h4>Current Projects</h4>
-              <hr />
-            </div>
-            <h5>10+</h5>
+        <h2 class="about-section__title">Why Choose Us?</h2>
+        <div class="about__container">
+          <div class="about-imgs">
+            <img
+              src="assets/img/about-1.png"
+              alt="Fraction 1 of 4"
+              class="about-img"
+            />
+            <img
+              src="assets/img/about-2.png"
+              alt="Fraction 2 of 4"
+              class="about-img"
+            />
+            <img
+              src="assets/img/about-3.png"
+              alt="Fraction 3 of 4"
+              class="about-img"
+            />
+            <img
+              src="assets/img/about-4.png"
+              alt="Fraction 4 of 4"
+              class="about-img"
+            />
+          </div>
+          <div class="about__content">
+            <h2>Bringing a touch of heart and soul to every home</h2>
             <p>
-              Check out our latest projects - Many homes waiting to become your
-              happy space!
+              We take pride in our clients' satisfaction with their finished
+              NexaSpace homes.
             </p>
-          </div>
-          <!-- finished projects -->
-          <div class="about-projects">
-            <div>
-              <h4>Finished Projects</h4>
-              <hr />
+            <!-- current projects -->
+            <div class="about-projects">
+              <div>
+                <h4>Current Projects</h4>
+                <hr />
+              </div>
+              <h5>10+</h5>
+              <p>
+                Check out our latest projects - Many homes waiting to become your
+                happy space!
+              </p>
             </div>
-            <h5>50+</h5>
-            <p class="mb-4">
-              Because we believe your space should be your sanctuary, Where your
-              living space becomes the heart.
-            </p>
+            <!-- finished projects -->
+            <div class="about-projects">
+              <div>
+                <h4>Finished Projects</h4>
+                <hr />
+              </div>
+              <h5>50+</h5>
+              <p class="mb-4">
+                Because we believe your space should be your sanctuary, Where your
+                living space becomes the heart.
+              </p>
+            </div>
+  
+            <button
+              type="button"
+              class="btn-2 btn-about btn-transparent"
+              onclick="window.location.href='contact.html'"
+            >
+              Get more info
+            </button>
           </div>
-
-          <button
-            type="button"
-            class="btn-2 btn-transparent w-269"
-            onclick="window.location.href='contact.html'"
-          >
-            Get more info
-          </button>
         </div>
       </section>
 
       <section class="services" id="services">
-        <h1>We Buy, Sell, Rent Properties</h1>
-        <p>
+        <div class="services__container">
+        <h1 class="services-section__title">We Buy, Sell, Rent Properties</h1>
+        <p class="services-section__description">
           Count on us in finding the perfect home that suits your lifestyle and
           aspirations.
         </p>
 
-        <div class="services-boxes">
+        <div class="services__boxes">
           <!-- buy properties -->
-          <a href="service-buy.html">
-            <div class="services-box service-buy">
-              <i class="fa-solid fa-house" id="service-logo"></i>
-              <h4>Buy Properties</h4>
-              <p>
-                We curate dream homes for you - find your perfect match with
-                NexaSpace, where buying meets exceeding expectations.
-              </p>
-              <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
-            </div>
+          <a href="service-buy.html" class="services__box service__buy">
+            <i class="fa-solid fa-house service__icon"></i>
+            <h4 class="services__box-title">Buy Properties</h4>
+            <p class="services__box-text">
+              We curate dream homes for you - find your perfect match with
+              NexaSpace, where buying meets exceeding expectations.
+            </p>
+            <i class="fa-solid fa-arrow-right arrow__icon"></i>
           </a>
           <!-- sell properties -->
-          <a href="service-buy.html">
-            <div class="services-box service-sell">
-              <i class="fa-solid fa-hand-holding-dollar" id="service-logo"></i>
-              <h4>Sell Properties</h4>
-              <p>
+          <a href="service-buy.html" class="services__box service__sell">
+            <i class="fa-solid fa-hand-holding-dollar service__icon"></i>
+              <h4 class="services__box-title">Sell Properties</h4>
+              <p class="services__box-text">
                 We showcase not just listings but opportunities for a seamless
                 and profitable sale ensuring your real estate is in right hand.
               </p>
-              <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
-            </div>
+              <i class="fa-solid fa-arrow-right arrow__icon"></i>
           </a>
           <!-- rent properties -->
-          <a href="service-buy.html">
-            <div class="services-box service-rent">
-              <i class="fa-solid fa-key" id="service-logo"></i>
-              <h4>Rent Properties</h4>
-              <p>
+          <a href="service-buy.html" class="services__box service__rent">
+            <i class="fa-solid fa-key service__icon"></i>
+              <h4 class="services__box-title">Rent Properties</h4>
+              <p class="services__box-text">
                 We provide not just homes but experiences, ensuring you rental
                 journey is both effortless and satisfying.
               </p>
-              <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
-            </div>
+              <i class="fa-solid fa-arrow-right arrow__icon"></i>
           </a>
           </a>
+        </div>
         </div>
       </section>
 
       <section class="properties" id="properties">
-        <h1 id="properties-title"><b>NexaSpace</b> Properties</h1>
-        <p id="properties-description">Elavating Living, One Home at a Time</p>
+        <div class="properties__container">
+        <h1 class="properties-section__title"><b>NexaSpace</b> Properties</h1>
+        <p class="properties-section__description">Elavating Living, One Home at a Time</p>
 
         <!-- swiper -->
         <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- slides -->
-            <div class="swiper-slide">
-              <!-- property 1 -->
-              <div class="property">
-                <div class="overlay">
-                  <div class="property-stats">
-                    <div class="property-name">
-                      <h6>Harmony Heaven</h6>
-                      <p>San Francisco, Oak Street</p>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-2 btn-transparent btn-property"
-                      onclick="window.location.href='property.html'"
-                    >
-                      Details
-                  </button>
-                  </div>
-                </div>
-                <img src="assets/img/property-1.png" alt="condominium" class="property-img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- property 2 -->
-              <div class="property">
-                <div class="overlay">
-                  <div class="property-stats">
-                    <div class="property-name">
-                      <h6>Serenity Springs</h6>
-                      <p>Miami, Palm Avenue</p>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-2 btn-transparent btn-property"
-                      onclick="window.location.href='property.html'"
-                    >
-                      Details
-                  </button>
-                  </div>
-                </div>
-                <img src="assets/img/property-2.png" alt="condominium" class="property-img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- property 3 -->
-              <div class="property">
-                <div class="overlay">
-                  <div class="property-stats">
-                    <div class="property-name">
-                      <h6>Tranquil Terrace</h6>
-                      <p>NY City, Lexington Avenue</p>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-2 btn-transparent btn-property"
-                      onclick="window.location.href='property.html'"
-                    >
-                      Details
-                  </button>
-                  </div>
-                </div>
-                <img src="assets/img/property-3.png" alt="condominium" class="property-img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- property 4 -->
-              <div class="property">
-                <div class="overlay">
-                  <div class="property-stats">
-                    <div class="property-name">
-                      <h6>Breeze Residence</h6>
-                      <p>LA, Ocean Drive</p>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-2 btn-transparent btn-property"
-                      onclick="window.location.href='property.html'"
-                    >
-                      Details
-                  </button>
-                  </div>
-                </div>
-                <img src="assets/img/property-4.png" alt="condominium" class="property-img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- property 5 -->
-              <div class="property">
-                <div class="overlay">
-                  <div class="property-stats">
-                    <div class="property-name">
-                      <h6>Majestic Meadows</h6>
-                      <p>Chicago, Magnolia Street</p>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-2 btn-transparent btn-property"
-                      onclick="window.location.href='property.html'"
-                    >
-                      Details
-                  </button>
-                  </div>
-                </div>
-                <img src="assets/img/property-5.png" alt="condominium" class="property-img">
-              </div>
-            </div>
-          </div>
           <!-- navigation buttons -->
           <div class="swiper-custom-nav">
             <div class="swiper-custom-nav-prev">
@@ -347,241 +253,335 @@
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
+          <!-- slides -->
+          <div class="swiper-wrapper">
+            <!-- property 1 -->
+            <div class="swiper-slide">
+              <div class="property__content">
+                <div class="property__info">
+                  <h6 class="property__name">Harmony Heaven</h6>
+                  <p class="property__location">San Francisco, Oak Street</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-2 btn-transparent btn__property"
+                  onclick="window.location.href='property.html'"
+                >
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+              <img src="assets/img/property-1.png" alt="condominium" class="property__img">
+            </div>
+            <!-- property 2 -->
+            <div class="swiper-slide">
+              <div class="property__content">
+                <div class="property__info">
+                  <h6 class="property__name">Serenity Springs</h6>
+                  <p class="property__location">Miami, Palm Avenue</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-2 btn-transparent btn__property"
+                  onclick="window.location.href='property.html'"
+                >
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+              <img src="assets/img/property-2.png" alt="condominium" class="property__img">
+            </div>
+            <!-- property 3 -->
+            <div class="swiper-slide">
+              <div class="property__content">
+                <div class="property__info">
+                  <h6 class="property__name">Tranquil Terrace</h6>
+                  <p class="property__location">NY City, Lexington Avenue</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-2 btn-transparent btn__property"
+                  onclick="window.location.href='property.html'"
+                >
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+              <img src="assets/img/property-3.png" alt="condominium" class="property__img">
+            </div>
+            <!-- property 4 -->
+            <div class="swiper-slide">
+              <div class="property__content">
+                <div class="property__info">
+                  <h6 class="property__name">Breeze Residence</h6>
+                  <p class="property__location">LA, Ocean Drive</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-2 btn-transparent btn__property"
+                  onclick="window.location.href='property.html'"
+                >
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+              <img src="assets/img/property-4.png" alt="condominium" class="property__img">
+            </div>
+            <!-- property 5 -->
+            <div class="swiper-slide">
+              <div class="property__content">
+                <div class="property__info">
+                  <h6 class="property__name">Majestic Meadows</h6>
+                  <p class="property__location">Chicago, Magnolia Street</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-2 btn-transparent btn__property"
+                  onclick="window.location.href='property.html'"
+                >
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+              <img src="assets/img/property-5.png" alt="condominium" class="property__img">
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 
       <section class="faq" id="faq">
-        <div class="faq-header">
-          <h1>FREQUENTLY ASKED QUESTIONS</h1>
-          <a href="contact.html" class="ask-more">
-            ASK US MORE
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="accordion">
-          <div class="accordion-item" id="question-1">
-            <a
-              class="accordion-link"
-              href="javascript:void(0)"
-              onclick="toggleAccordion('question-1')"
-            >
-              <h3 class="accordion-title">What types of properties does NexaSpace offer?</h3>
-              <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+        <div class="faq__container">
+          <div class="faq__heading">
+            <h1 class="faq-section__title">FREQUENTLY ASKED QUESTIONS</h1>
+            <a href="contact.html" class="btn__ask-more">
+              ASK US MORE
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <div class="answer">
-              <p>
-                NexaSpace specializes in a diverse range of properties, including luxury homes,
-                condominiums, and stylish apartments. Our portfolio is designed to cater to
-                various preferences and lifestyles.
-              </p>
-            </div>
-            <hr>
           </div>
-
-          <div class="accordion-item" id="question-2">
-            <a
-              class="accordion-link"
-              href="javascript:void(0)"
-              onclick="toggleAccordion('question-2')"
-            >
-              <h3 class="accordion-title">
-                How can I start the process of buying a property with NexaSpace?
-              </h3>
-              <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
-            </a>
-            <div class="answer">
-              <p>
-                Initiating your property purchase journey with NexaSpace is easy. Simply
-                explore our listings, and when you find a property of interest, contact our
-                dedicated team. We'll guide you through the entire process, from viewings to
-                the final transaction.
-              </p>
+          <div class="accordion">
+            <!-- faq item -->
+            <div class="accordion__item" id="question-1">
+              <a
+                class="accordion__link"
+                href="javascript:void(0)"
+                onclick="toggleAccordion('question-1')"
+              >
+                <h3 class="accordion__title">What types of properties does NexaSpace offer?</h3>
+                <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+              </a>
+              <div class="answer">
+                <p class="answer__text">
+                  NexaSpace specializes in a diverse range of properties, including luxury homes,
+                  condominiums, and stylish apartments. Our portfolio is designed to cater to
+                  various preferences and lifestyles.
+                </p>
+              </div>
+              <hr>
             </div>
-            <hr>
-          </div>
-
-          <div class="accordion-item" id="question-3">
-            <a
-              class="accordion-link"
-              href="javascript:void(0)"
-              onclick="toggleAccordion('question-3')"
-            >
-              <h3 class="accordion-title">
-                What sets NexaSpace apart from other real estate providers?
-              </h3>
-              <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
-            </a>
-            <div class="answer">
-              <p>
-                NexaSpace stands out for its commitment to innovation, quality, and
-                personalized service. Our properties are crafted with attention to detail,
-                and we prioritize customer satisfaction, ensuring a seamless and delightful
-                experiences for our clients.
-              </p>
+            <!-- faq item -->
+            <div class="accordion__item" id="question-2">
+              <a
+                class="accordion__link"
+                href="javascript:void(0)"
+                onclick="toggleAccordion('question-2')"
+              >
+                <h3 class="accordion__title">
+                  How can I start the process of buying a property with NexaSpace?
+                </h3>
+                <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+              </a>
+              <div class="answer">
+                <p class="answer__text">
+                  Initiating your property purchase journey with NexaSpace is easy. Simply
+                  explore our listings, and when you find a property of interest, contact our
+                  dedicated team. We'll guide you through the entire process, from viewings to
+                  the final transaction.
+                </p>
+              </div>
+              <hr>
             </div>
-            <hr>
-          </div>
-
-          <div class="accordion-item" id="question-4">
-            <a
-              class="accordion-link"
-              href="javascript:void(0)"
-              onclick="toggleAccordion('question-4')"
-            >
-              <h3 class="accordion-title">
-                Can I list my property for sale with NexaSpace?
-              </h3>
-              <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
-            </a>
-            <div class="answer">
-              <p>
-                Absolutely! NexaSpace welcomes property owners looking to sell.
-                Connect with our experienced team, and we'll guide you throuch the
-                listing process, leveraging our experties to maximize the potential of your
-                property in the market.
-              </p>
+            <!-- faq item -->
+            <div class="accordion__item" id="question-3">
+              <a
+                class="accordion__link"
+                href="javascript:void(0)"
+                onclick="toggleAccordion('question-3')"
+              >
+                <h3 class="accordion__title">
+                  What sets NexaSpace apart from other real estate providers?
+                </h3>
+                <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+              </a>
+              <div class="answer">
+                <p class="answer__text">
+                  NexaSpace stands out for its commitment to innovation, quality, and
+                  personalized service. Our properties are crafted with attention to detail,
+                  and we prioritize customer satisfaction, ensuring a seamless and delightful
+                  experiences for our clients.
+                </p>
+              </div>
+              <hr>
             </div>
-            <hr>
-          </div>
-
-          <div class="accordion-item" id="question-5">
-            <a
-              class="accordion-link"
-              href="javascript:void(0)"
-              onclick="toggleAccordion('question-5')"
-            >
-              <h3 class="accordion-title">
-                What rental options are available through NexaSpace?
-              </h3>
-              <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
-            </a>
-            <div class="answer">
-              <p>
-                NexaSpace offers a variety of rental options, from short-term leases
-                to long-term arrangements. Whether you're seeking a temporary residence or a
-                place to settle down, our rental portfolio is designed to meet your specific
-                needs. Explore our listings or contact us for personalized assistance.
-              </p>
+            <!-- faq item -->
+            <div class="accordion__item" id="question-4">
+              <a
+                class="accordion__link"
+                href="javascript:void(0)"
+                onclick="toggleAccordion('question-4')"
+              >
+                <h3 class="accordion__title">
+                  Can I list my property for sale with NexaSpace?
+                </h3>
+                <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+              </a>
+              <div class="answer">
+                <p class="answer__text">
+                  Absolutely! NexaSpace welcomes property owners looking to sell.
+                  Connect with our experienced team, and we'll guide you throuch the
+                  listing process, leveraging our experties to maximize the potential of your
+                  property in the market.
+                </p>
+              </div>
+              <hr>
             </div>
-            <hr>
+            <!-- faq item -->
+            <div class="accordion__item" id="question-5">
+              <a
+                class="accordion__link"
+                href="javascript:void(0)"
+                onclick="toggleAccordion('question-5')"
+              >
+                <h3 class="accordion__title">
+                  What rental options are available through NexaSpace?
+                </h3>
+                <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+              </a>
+              <div class="answer">
+                <p class="answer__text">
+                  NexaSpace offers a variety of rental options, from short-term leases
+                  to long-term arrangements. Whether you're seeking a temporary residence or a
+                  place to settle down, our rental portfolio is designed to meet your specific
+                  needs. Explore our listings or contact us for personalized assistance.
+                </p>
+              </div>
+              <hr>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="testimonials">
-        <h1>Hear From Clients Around The <b>World</b></h1>
-        <h6>Hear What Our Valued Clients Have to Say about their NexaSpace Experience.</h6>
-        <!-- swiper -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- testimony -->
-            <div class="swiper-slide testimony-slide">
-              <div class="testimony">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>
-                  NexaSpace made my home-buying journey seamless and enjoyable. From the first
-                  viewing to holding the keys, their commitment to excellence shines through.
-                </p>
-                <div class="testimony-people">
-                  <p>Eva K.</p>
-                  <span>Homebuyer</span>
+        <div class="testimonials__container">
+          <h1 class="testimonials-section__title">Hear From Clients Around The <b>World</b></h1>
+          <h6 class="testimonials-section__description">Hear What Our Valued Clients Have to Say about their NexaSpace Experience.</h6>
+          <!-- swiper -->
+          <div class="swiper">
+            <!-- navigation buttons -->
+            <div class="swiper-custom-nav testimonial-nav">
+              <div class="swiper-custom-nav-prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="swiper-custom-nav-next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <!-- slides -->
+            <div class="swiper-wrapper">
+              <!-- testimony -->
+              <div class="swiper-slide swiper-slide-gray">
+                <div class="testimony__slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="testimony__text">
+                    NexaSpace made my home-buying journey seamless and enjoyable. From the first
+                    viewing to holding the keys, their commitment to excellence shines through.
+                  </p>
+                  <div class="testimony__people">
+                    <p class="testimony__name">Eva K.</p>
+                    <span class="testimony__rol">Homebuyer</span>
+                  </div>
+                </div>
+              </div>
+              <!-- testimony -->
+              <div class="swiper-slide swiper-slide-gray">
+                <div class="testimony__slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="testimony__text">
+                    Listing my property with NexaSpace was the right chioce. their marketing
+                    prowerss and dedication led to a swift sale, and I couldn't be happier
+                    with the result.
+                  </p>
+                  <div class="testimony__people">
+                    <p class="testimony__name">Mark R.</p>
+                    <span class="testimony__rol">Satisfied Seller</span>
+                  </div>
+                </div>
+              </div>
+              <!-- testimony -->
+              <div class="swiper-slide swiper-slide-gray">
+                <div class="testimony__slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="testimony__text">
+                    Renting with NexaSpace was a breeze. They tailored options to my preferences,
+                    and I'm now settled in a place that feels like home, thanks to their
+                    personalized approach.
+                  </p>
+                  <div class="testimony__people">
+                    <p class="testimony__name">Lily H.</p>
+                    <span class="testimony__rol">Delighted Renter</span>
+                  </div>
+                </div>
+              </div>
+              <!-- testimony -->
+              <div class="swiper-slide swiper-slide-gray">
+                <div class="testimony__slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="testimony__text">
+                    NexaSpace's investment advice proved invaluable. Their keen market insights
+                    guided my decisions, resulting in a profitable venture.
+                  </p>
+                  <div class="testimony__people">
+                    <p class="testimony__name">Chris M.</p>
+                    <span class="testimony__rol">Impressed Investor</span>
+                  </div>
+                </div>
+              </div>
+              <!-- testimony -->
+              <div class="swiper-slide swiper-slide-gray">
+                <div class="testimony__slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="testimony__text">
+                    Our second property with NexaSpace reaffirmed their consistency in delivering
+                    excellence.
+                  </p>
+                  <div class="testimony__people">
+                    <p class="testimony__name">Sam and Maya G.</p>
+                    <span class="testimony__rol">Repeat Clients</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- testimony -->
-            <div class="swiper-slide testimony-slide">
-              <div class="testimony">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>
-                  Listing my property with NexaSpace was the right chioce. their marketing
-                  prowerss and dedication led to a swift sale, and I couldn't be happier
-                  with the result.
-                </p>
-                <div class="testimony-people">
-                  <p>Mark R.</p>
-                  <span>Satisfied Seller</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- testimony -->
-            <div class="swiper-slide testimony-slide">
-              <div class="testimony">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>
-                  Renting with NexaSpace was a breeze. They tailored options to my preferences,
-                  and I'm now settled in a place that feels like home, thanks to their
-                  personalized approach.
-                </p>
-                <div class="testimony-people">
-                  <p>Lily H.</p>
-                  <span>Delighted Renter</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- testimony -->
-            <div class="swiper-slide testimony-slide">
-              <div class="testimony">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>
-                  NexaSpace's investment advice proved invaluable. Their keen market insights
-                  guided my decisions, resulting in a profitable venture.
-                </p>
-                <div class="testimony-people">
-                  <p>Chris M.</p>
-                  <span>Impressed Investor</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- testimony -->
-            <div class="swiper-slide testimony-slide">
-              <div class="testimony">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>
-                  Our second property with NexaSpace reaffirmed their consistency in delivering
-                  excellence.
-                </p>
-                <div class="testimony-people">
-                  <p>Sam and Maya G.</p>
-                  <span>Repeat Clients</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- navigation buttons -->
-          <div class="swiper-custom-nav testimonial-nav">
-            <div class="swiper-custom-nav-prev">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="swiper-custom-nav-next">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
           </div>
         </div>
       </section>
+
+      <div class="callout">
+        <div class="callout__container">
+          <h4 class="callout__title">Connect with NexaSpace for Yuor Next Chapter in <br>Homeownership</h4>
+          <p class="callout__description">
+            Experience excellence in real estate - Your dream home is just a click
+            away. Reach out to us for personalized service and unparalleled living spaces.
+          </p>
+          <button
+            type="button"
+            class="btn-2 btn__callout"
+            onclick="window.location.href='contact.html'"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="contact-callout">
-        <h4>Connect with NexaSpace for Yuor Next Chapter in Homeownership</h4>
-        <p>
-          Experience excellence in real estate - Your dream home is just a click
-          away. <br>Reach out to us for personalized service and unparalleled living spaces.
-        </p>
-        <button
-          type="button"
-          class="btn-2 btn-callout"
-          onclick="window.location.href='contact.html'"
-        >
-          Contact Us
-        </button>
-      </div>
-      <div class="bottom-footer">
-        <div class="footer-contacts">
+      <div class="footer__container">
+        <div class="footer__contacts">
           <a href="/">
             <h4>NexaSpace</h4>
           </a>
@@ -592,82 +592,85 @@
           </div>
         </div>
 
-        <div class="footer-nav">
-          <div class="footer-links-container">
-            <div class="footer-links">
-              <h4>Company</h4>
-              <div class="footer-link">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="property.html">Properties</a>
-                <a href="contact.html">Contact</a>
-              </div>
-            </div>
-
-            <div class="footer-links">
-              <h4>Explore</h4>
-              <div class="footer-link">
-                <a href="#">Miami</a>
-                <a href="#">San Francisco</a>
-                <a href="#">New York</a>
-                <a href="#">Chicago</a>
-              </div>
-            </div>
-
-            <div class="footer-links">
-              <h4>Support</h4>
-              <div class="footer-link">
-                <a href="index.html#faq">FAQ</a>
-                <a href="service-buy.html">Buy Properties</a>
-                <a href="service-buy.html">Sell Properties</a>
-                <a href="service-buy.html">Rent Properties</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="discounts">
-            <h4>Get Discounts and Offers</h4>
-            <form action="https://api.web3forms.com/submit" method="post">
-              <input
-                type="hidden"
-                name="access_key"
-                value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
-              >
-              <input type="email" name="email" id="email" placeholder="Your E-mail">
-              <button type="submit" class="btn-2 btn-submit">Submit</button>
-            </form>
-            <div class="socials">
-              <a
-                href="https://www.facebook.com/?locale=es_LA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-instagram"></i>
-              </a>
-              <a
-                href="https://twitter.com/?lang=es"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/?hl=es"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-youtube"></i>
-              </a>
-            </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <div class="footer__link">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="property.html">Properties</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
+
+        <div class="footer__links">
+          <h4>Explore</h4>
+          <div class="footer__link">
+            <a href="#">Miami</a>
+            <a href="#">San Francisco</a>
+            <a href="#">New York</a>
+            <a href="#">Chicago</a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Support</h4>
+          <div class="footer__link">
+            <a href="index.html#faq">FAQ</a>
+            <a href="service-buy.html">Buy Properties</a>
+            <a href="service-buy.html">Sell Properties</a>
+            <a href="service-buy.html">Rent Properties</a>
+          </div>
+        </div>
+
+        <div class="discounts">
+          <h4>Get Discounts and Offers</h4>
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input
+              type="hidden"
+              name="access_key"
+              value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
+            >
+            <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+            <button type="submit" class="btn-2 btn-submit">Submit</button>
+          </form>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/?locale=es_LA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/?lang=es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Gaining hands-on coding experience.</p>
+        <p>
+          <span>&copy; 2024 NexaSpace.</span> Code by JCodeCraftsman. Design by
+          Nova Designs. All rights reserved.
+        </p>
       </div>
     </footer>
 

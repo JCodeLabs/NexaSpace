@@ -2,58 +2,65 @@
 
 
 /* ============ contact section ============ */
-.contact{
-  display: flex;
-  flex-direction: column;
-  margin: 12rem 10rem 0 10rem;
+.contact__headline{
+  margin-bottom: 12rem;
 }
 
-.contact-headline{
-  align-self: center;
-  text-align: center;
+.contact__headline h1{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
-.contact-headline h1{
-  font-size: 3.2rem;
-}
-
-.contact-headline p{
+.contact__headline p{
+  font-size: 2.4rem;
   opacity: 0.7;
 }
 
-.contact-content{
+.contact__content{
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   gap: 5rem;
-  justify-content: center;
-  align-items: center;
-  margin: 2.4rem 0;
+}
+@media screen and (min-width: 1024px){
+  .contact__content{
+    flex-direction: row;
+  }
 }
 
-.contact-content form{
+.contact__content form{
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  width: 100%;
 }
 
-.contact-content form input,
-.contact-content form textarea{
-  width: 70rem;
+.contact__content form input,
+.contact__content form textarea{
   height: 6rem;
   border: none;
   border-bottom: .1rem solid var(--black);
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
-.contact-content form input:focus,
-.contact-content form textarea:focus{
+.contact__content form textarea{
+  resize: none;
+}
+
+.contact__content form input:focus,
+.contact__content form textarea:focus{
   outline: none;
 }
 
-.contact-content form textarea{
+.contact__content form textarea{
   height: 16rem;
 }
 
-.contact-content img{
+.contact__content img{
   height: 100%;
-  width: 60rem;
+}
+
+.contact__content form button{
+  width: 50%;
+  margin: 0 auto;
 }

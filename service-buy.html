@@ -31,33 +31,47 @@
     <link rel="stylesheet" href="assets/css/service-buy.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html" class="brand">NexaSpace</a>
-      <div class="menu">
-        <div class="btn">
-          <i class="fas fa-times close-menu"></i>
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="logo">NexaSpace</a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li>
+              <a href="index.html#home" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="property.html" class="nav__link">Properties</a>
+            </li>
+            <li>
+              <a href="index.html#faq" class="nav__link">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <div class="btn">
+              <i class="fas fa-times close-menu"></i>
+            </div>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="btn-2 btn-contact-us"
+          onclick="window.location.href='contact.html'"
+        >
+          Contact Us
+        </button>
+        <div class="btn menu-icon">
+          <i class="fas fa-bars show-menu"></i>
         </div>
-        <a href="index.html#home">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="property.html">Properties</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <button
-        type="button"
-        class="btn-2 btn-visible"
-        onclick="window.location.href='contact.html'"
-      >
-        Contact Us
-      </button>
-      <div class="btn">
-        <i class="fas fa-bars show-menu"></i>
       </div>
     </header>
 
     <main>
-      <section class="service-page">
-        <div class="service-page-title">
+      <section class="services-page__container">
+        <div class="services-page__title">
           <h1>Empower Your Homeownership Journey With NexaSpace</h1>
           <p>
             Unlock your Dream Home: NexaSpace Your Trusted Partner in Seamless
@@ -65,10 +79,10 @@
           </p>
         </div>
 
-        <div class="service-page-container">
-          <div class="service-features">
-            <div class="service-stats">
-              <div class="service-stat">.service-stat div
+        <div class="service-page__content">
+          <div class="service__feature">
+            <div class="service__stats">
+              <div class="service__stat">
                 <div>
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <h4>Thorough Property Insights</h4>
@@ -81,7 +95,7 @@
                 </p>
               </div>
 
-              <div class="service-stat">
+              <div class="service__stat">
                 <div>
                   <i class="fa-solid fa-magnifying-glass-dollar"></i>
                   <h4>Transparent Pricing Details</h4>
@@ -95,14 +109,18 @@
               </div>
             </div>
 
-            <img src="assets/img/service-1.png" alt="Balcony" class="about-img">
+            <div class="service__feature-img">
+              <img src="assets/img/service-1.png" alt="Balcony">
+            </div>
           </div>
 
-          <div class="service-features mt-1 mb-5">
-            <img src="assets/img/service-2.png" alt="Condominium" class="about-img">
+          <div class="service__feature">
+            <div class="service__feature-img">
+              <img src="assets/img/service-2.png" alt="Condominium">
+            </div>
 
-            <div class="service-stats">
-              <div class="service-stat">
+            <div class="service__stats">
+              <div class="service__stat">
                 <div>
                   <i class="fa-regular fa-file"></i>
                   <h4>Legal and Documentation Guidance</h4>
@@ -114,7 +132,7 @@
                 </p>
               </div>
 
-              <div class="service-stat">
+              <div class="service__stat">
                 <div>
                   <i class="fa-solid fa-arrow-trend-up"></i>
                   <h4>Market Trends and Analysis</h4>
@@ -132,23 +150,8 @@
     </main>
 
     <footer class="footer">
-      <div class="contact-callout">
-        <h4>Connect with NexaSpace for Yuor Next Chapter in Homeownership</h4>
-        <p>
-          Experience excellence in real estate - Your dream home is just a click
-          away. <br />Reach out to us for personalized service and unparalleled
-          living spaces.
-        </p>
-        <button
-          type="button"
-          class="btn-2 btn-callout"
-          onclick="window.location.href='contact.html'"
-        >
-          Contact Us
-        </button>
-      </div>
-      <div class="bottom-footer">
-        <div class="footer-contacts">
+      <div class="footer__container">
+        <div class="footer__contacts">
           <a href="/">
             <h4>NexaSpace</h4>
           </a>
@@ -159,87 +162,85 @@
           </div>
         </div>
 
-        <div class="footer-nav">
-          <div class="footer-links-container">
-            <div class="footer-links">
-              <h4>Company</h4>
-              <div class="footer-link">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="property.html">Properties</a>
-                <a href="contact.html">Contact</a>
-              </div>
-            </div>
-
-            <div class="footer-links">
-              <h4>Explore</h4>
-              <div class="footer-link">
-                <a href="#">Miami</a>
-                <a href="#">San Francisco</a>
-                <a href="#">New York</a>
-                <a href="#">Chicago</a>
-              </div>
-            </div>
-
-            <div class="footer-links">
-              <h4>Support</h4>
-              <div class="footer-link">
-                <a href="index.html#faq">FAQ</a>
-                <a href="service-buy.html">Buy Properties</a>
-                <a href="service-buy.html">Sell Properties</a>
-                <a href="service-buy.html">Rent Properties</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="discounts">
-            <h4>Get Discounts and Offers</h4>
-            <form action="https://api.web3forms.com/submit" method="post">
-              <input
-                type="hidden"
-                name="access_key"
-                value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your E-mail"
-              />
-              <button type="submit" class="btn-2 btn-submit">Submit</button>
-            </form>
-            <div class="socials">
-              <a
-                href="https://www.facebook.com/?locale=es_LA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-instagram"></i>
-              </a>
-              <a
-                href="https://twitter.com/?lang=es"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/?hl=es"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-square-youtube"></i>
-              </a>
-            </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <div class="footer__link">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="property.html">Properties</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
+
+        <div class="footer__links">
+          <h4>Explore</h4>
+          <div class="footer__link">
+            <a href="#">Miami</a>
+            <a href="#">San Francisco</a>
+            <a href="#">New York</a>
+            <a href="#">Chicago</a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Support</h4>
+          <div class="footer__link">
+            <a href="index.html#faq">FAQ</a>
+            <a href="service-buy.html">Buy Properties</a>
+            <a href="service-buy.html">Sell Properties</a>
+            <a href="service-buy.html">Rent Properties</a>
+          </div>
+        </div>
+
+        <div class="discounts">
+          <h4>Get Discounts and Offers</h4>
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input
+              type="hidden"
+              name="access_key"
+              value="bf1bfc01-840f-4023-aa3c-75cf845df2f2"
+            >
+            <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+            <button type="submit" class="btn-2 btn-submit">Submit</button>
+          </form>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/?locale=es_LA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/?lang=es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Gaining hands-on coding experience.</p>
+        <p>
+          <span>&copy; 2024 NexaSpace.</span> Code by JCodeCraftsman. Design by
+          Nova Designs. All rights reserved.
+        </p>
       </div>
     </footer>
 

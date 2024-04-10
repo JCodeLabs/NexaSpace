@@ -1,88 +1,101 @@
 @import url('styles.css');
 
-/* ============ utilities ============ */
-.mt-1{
-  margin-top: 1rem;
-}
-
-.mb-5{
-  margin-bottom: 5rem;
-}
-
-
 /* ============ service section ============ */
-.service-page{
+.services-page__title{
   display: flex;
   flex-direction: column;
-  margin: 15rem 5rem 0;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+@media screen and (min-width: 768px){
+  .services-page__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3rem;
+    margin-bottom: 15rem;
+  }
 }
 
-.service-page-title{
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.service-page-title h1{
-  font-size: 4.8rem;
+.services-page__title h1{
+  font-size: 4rem;
   font-weight: 700;
-  width: 90.9rem;
 }
 
-.service-page-title p{
+.services-page__title p{
   font-size: 2.4rem;
-  width: 73rem;
   text-align: justify;
   text-justify: inter-word;
   opacity: 0.7;
 }
 
-.service-page-container{
+.service-page__content{
   display: flex;
   flex-direction: column;
+  gap: 10rem;
+}
+@media screen and (min-width: 1024px){
+  .service-page__content{
+    gap: 15rem;
+  }
 }
 
-.service-features{
+.service__feature{
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service__feature:last-child{
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1024px){
+  .service__feature,
+  .service__feature:last-child{
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+.service__stats,
+.service__feature-img{
+  flex-basis: 50%;
+  flex: 1;
+}
+
+.service__feature-img{
+  align-self: center;
+  border-radius: 3.2rem;
+  overflow: hidden;
+
+}
+
+.service__stat:last-child{
   margin-top: 5rem;
-  gap: 5rem;
 }
 
-.service-stats{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.service-stat{
-  margin-bottom: 5rem;
-}
-
-.service-stat div{
+.service__stat div{
   display: flex;
   gap: 2rem;
-  align-items: end;
+  align-items: start;
   margin-bottom: 1.4rem;
 }
 
-.service-stat div i{
+.service__stat div i{
   font-size: 3.2rem;
   color: var(--accent);
 }
 
-.service-stat div h4{
+.service__stat div h4{
   font-size: 3.2rem;
   font-weight: normal;
 }
 
-.service-stat p{
+.service__stat p{
   font-size: 2.4rem;
   opacity: .9;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.service-features img{
-  height: 50.5rem;
-  width: 120rem;
 }

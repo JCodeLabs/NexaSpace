@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
 
 
 /*=============== show and hide menu ===============*/
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.nav__links');
 const showMenu = document.querySelector('.show-menu');
 const closeMenu = document.querySelector('.close-menu');
 
@@ -47,11 +47,11 @@ const swiper = new Swiper('.swiper', {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 60,
+      spaceBetween: 10,
     },
     1440: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
   },
 
@@ -119,26 +119,28 @@ const sr = ScrollReveal({
   //reset: true, //Animations repeat
 });
 
-sr.reveal('#hero-slogan');
-sr.reveal('#hero-title', {delay: 400});
-sr.reveal('#hero-description', {delay: 500});
+// sections
+sr.reveal('.hero__slogan');
+sr.reveal('.hero__title', {delay: 400});
+sr.reveal('.hero__description', {delay: 500});
 sr.reveal('#hero-btn', {delay: 600});
 sr.reveal('.hero-page-imgs', {delay: 700});
 
 sr.reveal('.collab');
 
 sr.reveal('.about-imgs');
-sr.reveal('.about-headlines', {delay: 400});
+sr.reveal('.about__content', {delay: 400});
 sr.reveal('.about-projects', {delay: 500});
 
 sr.reveal('.services');
 
-sr.reveal('#properties-title');
-sr.reveal('#properties-description', {delay: 400});
+sr.reveal('.properties-section__title');
+sr.reveal('.properties-section__description', {delay: 400});
 sr.reveal('.swiper', {delay: 500});
 
-sr.reveal('.faq-header');
+sr.reveal('.faq__heading');
 
+// pages
 sr.reveal('.property-page');
 
 sr.reveal('.service-page-title');
